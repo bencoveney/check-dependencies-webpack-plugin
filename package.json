@@ -1,15 +1,15 @@
 {
   "name": "check-dependencies-webpack-plugin",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Webpack plugin to check that the correct dependencies are installed",
   "main": "./bin/index.js",
   "dependencies": {
-    "check-dependencies": "^1.1.0"
+    "check-dependencies": "1.1.0"
   },
   "devDependencies": {
-    "@types/webpack": "^4.4.21",
-    "typescript": "^3.2.2",
-    "webpack": "^4.27.1"
+    "@types/webpack": "4.4.21",
+    "typescript": "3.2.2",
+    "webpack": "4.27.1"
   },
   "scripts": {
     "test": "tsc"
@@ -18,11 +18,31 @@
     "type": "git",
     "url": "git+https://github.com/bencoveney/check-dependencies-webpack-plugin.git"
   },
-  "author": "Ben Coveney",
+  "author": {
+    "name": "Ben Coveney",
+    "email": "bencoveney@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bencoveney/check-dependencies-webpack-plugin/issues"
+    "url": "https://github.com/bencoveney/check-dependencies-webpack-plugin/issues",
+    "email": "bencoveney@gmail.com"
   },
   "homepage": "https://github.com/bencoveney/check-dependencies-webpack-plugin#readme",
-  "types": "./bin/index.d.ts"
+  "types": "./bin/index.d.ts",
+  "keywords": [
+    "check",
+    "install",
+    "dependencies",
+    "dependency",
+    "package",
+    "node_modules",
+    "webpack",
+    "plugin"
+  ],
+  "files": [
+    "./bin"
+  ],
+  "engines": {
+    "node": ">=6.9"
+  }
 }
