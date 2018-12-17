@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "Test package for CheckDependenciesWebpackPlugin",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencoveney/check-dependencies-webpack-plugin.git"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Ben Coveney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencoveney/check-dependencies-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/bencoveney/check-dependencies-webpack-plugin#readme"
+}
