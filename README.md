@@ -24,3 +24,10 @@ module.exports = {
 	}
 };
 ```
+
+TODO:
+
+- https://webpack.js.org/api/plugins/
+- https://survivejs.com/webpack/extending/plugins/
+- https://webpack.js.org/api/plugins/
+- https://webpack.js.org/contribute/release-process/
