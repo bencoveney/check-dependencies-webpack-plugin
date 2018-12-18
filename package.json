@@ -8,11 +8,14 @@
   },
   "devDependencies": {
     "@types/webpack": "4.4.21",
-    "typescript": "3.2.2",
-    "webpack": "4.27.1"
+    "typescript": "3.2.2"
   },
   "scripts": {
-    "test": "tsc"
+    "build": "tsc",
+    "unittest": "echo 'No Tests Yet'",
+    "sample": "npm run --prefix ./sample test",
+    "postinstall": "npm install --prefix ./sample",
+    "test": "npm run build && npm run unittest && npm run sample"
   },
   "repository": {
     "type": "git",

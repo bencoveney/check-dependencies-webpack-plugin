@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Sample",
+      "program": "${workspaceFolder}/sample/node_modules/webpack-cli/bin/cli.js",
+      "args": [
+          "--config",
+          "${workspaceFolder}/sample/webpack.config.js",
+          "--mode",
+          "production"
+      ],
+      "cwd": "${workspaceFolder}/sample"
+    }
+  ]
+}
