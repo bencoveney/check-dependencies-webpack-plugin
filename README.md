@@ -27,6 +27,7 @@ module.exports = {
 
 TODO:
 
+- compilation.errors.push();
 - https://webpack.js.org/api/plugins/
 - https://survivejs.com/webpack/extending/plugins/
 - https://webpack.js.org/api/plugins/

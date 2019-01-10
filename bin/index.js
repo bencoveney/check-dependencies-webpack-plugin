@@ -13,7 +13,13 @@ class CheckDependenciesWebpackPlugin {
         this.options = options;
     }
     apply(compiler) {
-        compiler.hooks.beforeRun.tapPromise("CheckDependenciesWebpackPlugin", () => CheckDependencies.default(this.options));
+        compiler.hooks.beforeRun.tapPromise("CheckDependenciesWebpackPlugin", () => CheckDependencies.default(this.options).then(result => {
+            if (result.status !== 0) {
+                throw new Error("CheckDependenciesWebpackPlugin failed");
+            }
+            else
+                return result;
+        }));
     }
 }
 exports.default = CheckDependenciesWebpackPlugin;

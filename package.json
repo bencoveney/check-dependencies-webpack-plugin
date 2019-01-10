@@ -7,13 +7,16 @@
     "check-dependencies": "1.1.0"
   },
   "devDependencies": {
-    "@types/webpack": "4.4.21",
+    "@types/webpack": "4.4.22",
     "typescript": "3.2.2",
-    "webpack": "^4.28.4"
+    "left-pad": "1.0.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
   },
   "scripts": {
     "build": "tsc",
-    "unittest": "echo 'No Tests Yet'",
+    "unittest": "node ./test/test.js",
     "test": "npm run build && npm run unittest"
   },
   "repository": {
