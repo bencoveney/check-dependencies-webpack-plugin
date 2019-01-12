@@ -2,7 +2,7 @@ import CheckDependencies, { Config } from "check-dependencies";
 import webpack = require("webpack");
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
-export type Config = Omit<Config, "log" | "error">;
+type Options = Omit<Config, "log" | "error">;
 
 /**
  * Webpack plugin to check that the correct dependencies are installed using the
@@ -11,13 +11,13 @@ export type Config = Omit<Config, "log" | "error">;
  * @export
  * @class CheckDependenciesWebpackPlugin
  */
-export default class CheckDependenciesWebpackPlugin {
+class CheckDependenciesWebpackPlugin {
   /**
    * Creates an instance of CheckDependenciesWebpackPlugin.
-   * @param {Partial<Config>} [options={}] Options for the check-dependencies library.
+   * @param {Partial<Options>} [options={}] Options for the check-dependencies library.
    * @memberof CheckDependenciesWebpackPlugin
    */
-  constructor(private options: Partial<Config> = {}) {}
+  constructor(private options: Partial<Options> = {}) {}
 
   /**
    * Set up the webpack plugin.
@@ -44,3 +44,5 @@ export default class CheckDependenciesWebpackPlugin {
     );
   }
 }
+
+export = CheckDependenciesWebpackPlugin;

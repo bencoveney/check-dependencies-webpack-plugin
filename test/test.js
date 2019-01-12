@@ -1,6 +1,6 @@
 const plugin = require("../bin");
 
-const instance = new plugin.default({});
+const instance = new plugin({});
 
 const compilation = {
   errors: []

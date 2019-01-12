@@ -2,7 +2,6 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 const check_dependencies_1 = __importDefault(require("check-dependencies"));
 /**
  * Webpack plugin to check that the correct dependencies are installed using the
@@ -14,7 +13,7 @@ const check_dependencies_1 = __importDefault(require("check-dependencies"));
 class CheckDependenciesWebpackPlugin {
     /**
      * Creates an instance of CheckDependenciesWebpackPlugin.
-     * @param {Partial<Config>} [options={}] Options for the check-dependencies library.
+     * @param {Partial<Options>} [options={}] Options for the check-dependencies library.
      * @memberof CheckDependenciesWebpackPlugin
      */
     constructor(options = {}) {
@@ -38,4 +37,4 @@ class CheckDependenciesWebpackPlugin {
         }));
     }
 }
-exports.default = CheckDependenciesWebpackPlugin;
+module.exports = CheckDependenciesWebpackPlugin;
