@@ -1,6 +1,6 @@
 {
   "name": "check-dependencies-webpack-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Webpack plugin to check that the correct dependencies are installed",
   "main": "./bin/index.js",
   "dependencies": {
