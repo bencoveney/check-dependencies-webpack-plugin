@@ -1,14 +1,23 @@
 const plugin = require("../bin");
 
-const instance = new plugin.default({
-  verbose: true
-});
+const instance = new plugin.default({});
+
+const compilation = {
+  errors: []
+};
 
 instance.apply({
   hooks: {
-    beforeRun: {
+    make: {
       tapPromise: function(name, callback) {
-        callback().then(result => console.log(result));
+        callback(compilation).then(
+          result => {
+            console.log(result);
+          },
+          () => {
+            console.log(compilation.errors);
+          }
+        );
       }
     }
   }
