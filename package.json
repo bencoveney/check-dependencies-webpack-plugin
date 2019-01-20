@@ -44,7 +44,9 @@
     "plugin"
   ],
   "files": [
-    "./bin"
+    "bin",
+    "src",
+    "test"
   ],
   "engines": {
     "node": ">=6.9"
